@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    
+      
+    
+    <fieldset> 
+      <legend>Informations Personnelles</legend>
+    <form>
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required placeholder="Entrez votre nom" /> <br><br>
+      <label for="prenom">Prenom</label>
+      <input type="text" id="prenom" name="prenom" required placeholder="Entrez votre prenom" /><br><br>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required placeholder="Entrez votre age" /><br><br>
+  
+    </form>
+    <form>
+      
+        <label>Sexe</label>
+        <p>
+          <input type="radio" name="size" id="size_1" value="small" required/>
+          <label for="size_1">Homme</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium" required/>
+          <label for="size_2">Femme</label><br><br>
+        </p>
+    </form>
+    <form>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required placeholder="exemple@domaine.com"> <br><br>
+
+      <label for="adresse">Adresse :</label>
+      <input type="text" id="adresse" name="adresse" required placeholder="Entrez votre adresse"> <br><br>
+
+      <label for="codepostale">Code postale :</label>
+      <input type="text" id="codepostale" name="codepostale" maxlength="5" required placeholder="59000"><br><br>
+
+      <label for="ville">Ville :</label>
+      <input type="text" id="ville" name="ville" required placeholder="Valenciennes"><br><br>
+
+      <label for="metier">Metier:&emsp; </label>
+      <Select name="metier" id="metier" required >
+        <option value="" label="Choisissez un métier"></option>
+        <option value="astronaute">Astronaute</option>
+        <option value="footballeur">Footballeur</option>
+        <option value="mecano">Mécanicien</option>
+        <option value="libraire">Libraire</option>
+        <option value="physicien">Physicien</option>
+      </Select>   <br><br>
+      
+      <label for="nationalité">Nationalité : &emsp; </label> 
+      <select name="nationalité" id="nationalité" required>
+      <option value="" label="Choisissez une nationalité"></option>
+      <option value="francais" selected>Francaise</option>
+      <option value="angleterre">Anglaise</option>
+      <option value="allemagne">Allemande</option>
+      <option value="algerie">Algerienne</option>
+      <option value="espagne">Espagnole</option>
+      </select><br><br>
+
+      <label for="date">Date de naissance :</label>
+      <input type="date" id="date" name="date" min="1950-01-01" max="2006-01-01" required><br><br>
+
+      <label for="paysdenaissance">Pays de Naissance :</label>
+      <input type="text" id="paysdenaissance" name="paysdenaissance" required > <br><br>
+
+      <label for="secunum">Numero de secu :</label>
+      <input type="text" id="secunum" name="secunum" maxlength="15" required placeholder="X XX XX XX XXX XXX XX"><br><br>
+
+      <label for="passportnum">Numero de passeport :</label>
+      <input type="text" id="passportnum" name="passportnum" maxlength="9" required placeholder="XXXXXXXXXX"><br><br>
+
+      <label for="datedel">Date de delivrance du passeport : </label>
+      <input type="date" id="datedel" name="datedel" min="2014-07-14" max="2024-07-15" required><br><br>
+
+      <label for="dateval">Date de validité du passeport : </label>
+      <input type="date" id="dateval" name="dateval" min="2024-07-14" max="2036-07-15" required><br><br>
+
+      <input type="submit" value="Soumettre">
+
+    </form>
+    </fieldset>
+  </body>
+</html>
